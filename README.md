@@ -2,5 +2,6 @@
 Pass an HTML to the print function
 
 ```jsx
-qzPrinty.print(htmlToPrint);
+let qzp = new qzPrinty();
+qzp.print(htmlToPrint);
 ```

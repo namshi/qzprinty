@@ -1,0 +1,24 @@
+{
+  "name": "qzprinty",
+  "version": "1.0.0",
+  "description": "A simple utility to print html using qz tray",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therayess/qzprinty.git"
+  },
+  "author": "Ammar Rayess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therayess/qzprinty/issues"
+  },
+  "homepage": "https://github.com/therayess/qzprinty#readme",
+  "dependencies": {
+    "qz-tray": "^2.0.8",
+    "rsvp": "^4.8.4",
+    "sha256": "^0.2.0"
+  }
+}

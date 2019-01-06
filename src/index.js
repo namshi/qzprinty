@@ -18,12 +18,14 @@ export default class qzPrinty {
     }
 	}
 	init() {
-		qz.api.setSha256Type(function(data) {
-	    return sha256(data);
-	  });
+    if (!this.config) {
+      qz.api.setSha256Type(function(data) {
+        return sha256(data);
+      });
 
-	  this.config = qz.configs.create(this.options.printer, { margins: 2 });
-  	this.connected = null;
+      this.config = qz.configs.create(this.options.printer);
+      this.connected = null;
+    }
 	}
 	print(html) {
 		let self = this;

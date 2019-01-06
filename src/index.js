@@ -24,7 +24,6 @@ export default class qzPrinty {
       });
 
       this.config = qz.configs.create(this.options.printer);
-      this.connected = null;
     }
 	}
 	print(html) {
@@ -36,8 +35,8 @@ export default class qzPrinty {
       data: html
     }]; 
 
-    if (!self.connected) {
-      self.connected = qz.websocket.connect().then(function() { 
+    if (!qz.websocket.isActive()) {
+      qz.websocket.connect().then(function() { 
         self.print(html);
       }).catch(function(err) { console.log(err); });
     } else {

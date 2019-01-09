@@ -1,12 +1,18 @@
 {
   "name": "qzprinty",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple utility to print html using qz tray",
   "main": "dist/build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
+  "keywords": [
+    "print html",
+    "qz tray printing",
+    "print from browser",
+    "printing utility"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/therayess/qzprinty.git"

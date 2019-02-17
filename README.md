@@ -11,3 +11,8 @@ You can specify a printer name in options like so:
 ```jsx
 let qzp = new qzPrinty({ printer: "My printer name" });
 ```
+
+You can also print pdf files as such:
+```jsx
+qzp.print(pdfFileLocation/URL, 'pdf');
+```

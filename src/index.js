@@ -26,18 +26,21 @@ export default class qzPrinty {
       this.config = qz.configs.create(this.options.printer);
     }
 	}
-	print(html) {
+	print(html, type = 'html') {
 		let self = this;
 
+    let format = 'plain';
+    if (type === 'pdf') format = 'file';
+
     let data = [{
-      type: 'html',
-      format: 'plain',
+      type: type,
+      format,
       data: html
     }]; 
 
     if (!qz.websocket.isActive()) {
       qz.websocket.connect().then(function() { 
-        self.print(html);
+        self.print(html, type);
       }).catch(function(err) { console.log(err); });
     } else {
       qz.print(this.config, data).catch(function(e) {

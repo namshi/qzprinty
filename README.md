@@ -12,7 +12,29 @@ You can specify a printer name in options like so:
 let qzp = new qzPrinty({ printer: "My printer name" });
 ```
 
+You can also pass printer settings, for example:
+```jsx
+let qzp = new qzPrinty({ 
+	printer: 'qr-printer', 
+	settings: { 
+		units: 'in', 
+		size: { 
+			width: 4, 
+			height: 6 
+		}, 
+		rasterize: false 
+	} 
+});
+```
+
+You can find all settings on the qz.io config page: https://qz.io/api/qz.configs
+
 You can also print pdf files as such:
 ```jsx
-qzp.print(pdfFileLocation/URL, 'pdf');
+qzp.print(pathToPdf/URL, 'pdf');
+```
+
+To print multiple times, pass the values in an array, example:
+```jsx
+qzp.print([html1, html2, html3]);
 ```

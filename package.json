@@ -1,6 +1,6 @@
 {
   "name": "qzprinty",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A simple utility to print html or pdf using qz tray",
   "main": "dist/build.js",
   "scripts": {

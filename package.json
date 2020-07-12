@@ -1,6 +1,6 @@
 {
   "name": "qzprinty",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A simple utility to print html or pdf using qz tray",
   "main": "dist/build.js",
   "scripts": {
@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/therayess/qzprinty.git"
+    "url": "git+https://github.com/namshi/qzprinty.git"
   },
   "author": "Ammar Rayess",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/therayess/qzprinty/issues"
+    "url": "https://github.com/namshi/qzprinty/issues"
   },
-  "homepage": "https://github.com/therayess/qzprinty#readme",
+  "homepage": "https://github.com/namshi/qzprinty#readme",
   "dependencies": {
     "qz-tray": "^2.0.8",
     "rsvp": "^4.8.4",
